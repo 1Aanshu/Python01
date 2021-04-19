@@ -57,3 +57,28 @@ print(obj5.id)
 print(obj5.name)
 print(obj5.address)
 print(obj5) # call __str__() method
+print("___________")
+obj6 = Class5(1,"Aanshu Dwiwedi","Lalitpur")
+print(obj6)
+
+print("------------")
+obj7 = Class6(100)
+print(obj7.getId())
+print(obj7)
+obj7.setId(102)
+print(obj7.getId())
+print(obj7)
+
+print("____________")
+obj8 = Class7() #Class7() -> __init__(self, id=0)
+print(obj8)
+print("-------------")
+obj8_1 = Class7(2) #Class7() -> __init__(self, id=0)
+print(obj8_1)
+print("------------")
+
+obj9 = Class8(1, "Aanshu") # Object declare and initialize
+#print(obj9.id) # AttributeError: 'Class8' object has no attribute 'id'
+print(obj9.getId(), obj9.fullName)
+print(obj9)
+print("------------")

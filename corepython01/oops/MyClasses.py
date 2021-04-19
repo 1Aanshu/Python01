@@ -42,3 +42,64 @@ class Class4():
 
     def __str__(self):
         return str(self.id)+", "+self.name+", "+self.address
+
+class Class5():
+    # initialize function - Constructor
+    def __init__(self,id,name,address):
+        # instance variables
+        self.id = id
+        self.name = name
+        self.address = address
+
+    def __str__(self):
+        return str(self.id)+", "+self.name+", "+self.address
+
+class Class6():
+    # initialize function - Constructor
+    def __init__(self, id):
+        # instance variables
+        self.id = id
+    # Setter
+    def setId(self, id):
+        self.id = id
+
+
+    # Getter
+    def getId(self):
+        return str(self.id)
+
+    #str
+    def __str__(self):
+        return str(self.id)
+
+class Class7():
+    # initialize function - Constructor
+    def __init__(self, id=0): #default value to parameter
+        # instance variables
+        self.id = id
+    # Setter
+    def setId(self, id):
+        self.id = id
+
+
+    # Getter
+    def getId(self):
+        return str(self.id)
+
+    #str
+    def __str__(self):
+        return str(self.id)
+
+class Class8(Class7): # Inheritance - Class7 ->Super class ; Class8 -> Sub Class
+    def __init__(self,id=0, fullName="NA"):
+        super().__init__(id) # passing id to Class7 init
+        self.fullName=fullName
+
+    def setFullName(self, fullName):
+        self.fullName=fullName
+
+    def getFullName(self):
+        return self.fullName
+
+    def __str__(self):
+        return super(Class8, self).__str__()+", "+self.fullName
