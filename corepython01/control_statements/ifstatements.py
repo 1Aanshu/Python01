@@ -154,3 +154,41 @@ def f1():
 print(range(10))
 var1 = range(10)
 print(var1)
+print()
+
+# Collections with for loop
+list1 = [3, 4, 5, 6, 7, 8]
+for item in list1:
+    print(item)
+print()
+tup1 = (3, 4, 5, 6, 7, 8)
+for item in tup1:
+    print(item)
+print()
+set1 = {3, 4, 5, 6, 7, 8}
+for item in set1:
+    print(item)
+print()
+dict1 = {'id':1,'name':'Aanshu Dwiwedi','address':'Kathmandu, Nepal'}
+print(dict1)
+for key in dict1.keys():
+    print(key)
+
+for value in dict1.values():
+    print(value)
+
+for item in dict1.items():
+    print(item)
+
+for key in dict1.keys():
+    print(dict1[key])
+
+for key, value in dict1.items():
+    print(key, value)
+
+print()
+
+from array import array
+array1 = array('i',[6, 7, 8, 9])
+for item in array1:
+    print(item)
